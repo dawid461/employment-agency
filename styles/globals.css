@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "HK Grotesk", sans-serif;
+}
+.banner-gradient {
+    box-shadow: 0px -70px 80px 38px #f1f1f1;
+    background-color: #f1f1f1;
+}
+.banner-gradient-2 {
+    background-color: #f1f1f1;
+    box-shadow: 30px 3px 5px 1px rgba(241, 241, 241, 1);
+    /*box-shadow: 30px 0px 10px 0px rgba(241, 241, 241, 1);*/
+}
+.custom-position {
+    position: relative;
+    right: 2px;
+    max-width: 806px;
+    max-height: 130px;
+    padding-top: 20px;
+}
+.border-photos-desktop {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    width: 464px;
+    height: 156px;
+}
+.image-01-photos {
+    margin-left: 7rem;
+}
+.image-02-photos {
+    margin-top: 11rem;
+    margin-left: 24rem;
+}
+.image-03-photos {
+    margin-top: 14rem;
+    margin-left: 0px;
+}
+.box-shadow-customers {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+}
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-yellow {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#FDBC01, #FDBC01)
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+}
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    transition: 0.1s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+.overlay a {
+    font-family: "san serif" HK Grotesk;
+    color: #171717;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    opacity: 0.65;
+}
+.overlay a:hover,
+.overlay a:focus {
+    color: #fdbc01;
+}
+.overlay .closebtn {
+    color: #000000;
+    position: absolute;
+    left: 86%;
+    font-size: 40px;
+}
+/* popup form */
+.popup-form {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(68, 68, 68, 0.54);
+    transition: 0.1s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.popup-form .closePopup {
+    color: #000000;
+    font-size: 40px;
+}
+.closePopup:hover {
+    color: #fdbc01;
+}
+.text-small {
+    font-size: 8px;
+}
