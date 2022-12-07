@@ -32,24 +32,24 @@ const MenuMobile = (props) => {
                     </li>
 
                     <li>
-                        <a href='https://gregbud-wykonawstwo.pl/#o-nas' className='mt-20' onClick={closeNavMobile}>O
+                        <a href='https://employment-agency.vercel.app/#o-nas' className='mt-20' onClick={closeNavMobile}>O
                             Nas</a>
                     </li>
 
                     <li>
-                        <a href='https://gregbud-wykonawstwo.pl/#wspolpraca' onClick={closeNavMobile}>Współpraca</a>
+                        <a href='https://employment-agency.vercel.app/#wspolpraca' onClick={closeNavMobile}>Współpraca</a>
                     </li>
 
                     <li>
-                        <a href='https://gregbud-wykonawstwo.pl/#oferta' onClick={closeNavMobile}>Usługi</a>
+                        <a href='https://employment-agency.vercel.app/#oferta' onClick={closeNavMobile}>Usługi</a>
                     </li>
 
                     <li>
-                        <a href='https://gregbud-wykonawstwo.pl/#statystyki' onClick={closeNavMobile}>Statystyki</a>
+                        <a href='https://employment-agency.vercel.app/#statystyki' onClick={closeNavMobile}>Statystyki</a>
                     </li>
 
                     <li>
-                        <a href='https://gregbud-wykonawstwo.pl/#klienci' onClick={closeNavMobile}>Opinie</a>
+                        <a href='https://employment-agency.vercel.app/#klienci' onClick={closeNavMobile}>Opinie</a>
                     </li>
 
                     <li className='mt-14'>
@@ -58,7 +58,7 @@ const MenuMobile = (props) => {
                     </li>
 
                     <li>
-                        <a href='https://gregbud-wykonawstwo.pl/#najczesciej-zadawane-pytania'
+                        <a href='https://employment-agency.vercel.app/#najczesciej-zadawane-pytania'
                            onClick={closeNavMobile}>FAQ</a>
                     </li>
 
