@@ -1567,11 +1567,6 @@
     "array-includes" "^3.1.3"
     "object.assign" "^4.1.2"
 
-"kwesforms@^2.1.27":
-  "integrity" "sha512-DBePBSWWivBub3cI2y0Dvbr9c5Jh/1U8/DmKnmi/FP1zmw2FzsO1/ZE13V7lLa6ep87Cv4BLpCalipCSZN6IrQ=="
-  "resolved" "https://registry.npmjs.org/kwesforms/-/kwesforms-2.1.27.tgz"
-  "version" "2.1.27"
-
 "language-subtag-registry@~0.3.2":
   "integrity" "sha512-L0IqwlIXjilBVVYKFT37X9Ih11Um5NEl9cbJIuU/SwP/zEEAbBPOnEeeuxVMf45ydWQRDQN3Nqc96OgbH1K+Pg=="
   "resolved" "https://registry.npmjs.org/language-subtag-registry/-/language-subtag-registry-0.3.21.tgz"

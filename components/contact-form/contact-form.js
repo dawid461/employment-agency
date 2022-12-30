@@ -1,8 +1,7 @@
 import { useForm } from "react-hook-form";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import kwesforms from "kwesforms";
 
 const ContactForm = (props) => {
   //message after sent message. Message will hide after 15 seconds.
@@ -28,10 +27,10 @@ const ContactForm = (props) => {
       email,
       message,
     };
-    fetch("/api/contact", {
-      method: "post",
-      body: JSON.stringify(data),
-    });
+    //fetch("/api/contact", {
+    //method: "post",
+    // body: JSON.stringify(data),
+    // });
 
     //message after sent message. Message will hide after 15 seconds.
     setShowResults(true);
@@ -45,10 +44,6 @@ const ContactForm = (props) => {
     const token = await recaptchaRef.current.executeAsync();
   };
 
-  useEffect(() => {
-    kwesforms.init();
-  }, []);
-
   return props.trigger ? (
     <>
       <div
@@ -59,11 +54,7 @@ const ContactForm = (props) => {
           className="sm:max-w-xs md:max-w-lg xl:pb-10 xl:pt-5 bg-bgContactForm flex flex-col justify-center
                     items-center text-center"
         >
-          <form
-            //onSubmit={handleSubmit(SendForm)}
-            className="w-full max-w-lg kwes-form"
-            action="https://kwesforms.com/api/foreign/forms/F8pryiwFLnyCN6kD4hM5"
-          >
+          <form onSubmit={handleSubmit(SendForm)} className="w-full max-w-lg">
             {/*<ReCAPTCHA ref={recaptchaRef} size="invisible" sitekey="#" />*/}
 
             <div className="h-10 flex w-full justify-end mb-2">
